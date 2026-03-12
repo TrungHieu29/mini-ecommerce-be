@@ -20,6 +20,13 @@
    Promt: "Viết Exception Handler cho dự án"
    Sau đó tôi: Tạo và copy vào các file, sau đó sử dụng để bắt lỗi trong lớp Service.
 
+5. Ngày giờ: 12/03/2026 20:03
+   Công cụ: Gemini 
+   Promt: "Đọc Service của tôi ở phần Cart kiểm tra lỗi logic và sửa"
+   Sau đó tôi: Tìm và sửa lỗi.
+
+
+
 
 
 
