@@ -14,3 +14,5 @@ INSERT INTO products (name, description, price, image, stock) VALUES
 ('Apple Watch Series 9', 'Smartwatch with advanced health tracking', 500, 'https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b', 22),
 ('GoPro Hero 12', 'Action camera for adventure and sports', 550, 'https://images.unsplash.com/photo-1508898578281-774ac4893a78', 10),
 ('Canon EOS R50', 'Mirrorless camera for creators and vloggers', 900, 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32', 6);
+
+INSERT INTO carts (user_id) VALUES (1);

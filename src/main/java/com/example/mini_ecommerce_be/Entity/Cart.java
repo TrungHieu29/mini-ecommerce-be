@@ -22,12 +22,12 @@ public class Cart {
     @Column(name = "cart_id")
     private Long cartId;
 
-    @Column(name = "user_id",nullable = false)
+    @Column(name = "user_id",nullable = false,unique = true)
     private Long userId;
 
     @OneToMany(mappedBy = "cart",
                fetch = FetchType.LAZY,
-            cascade = CascadeType.ALL,
-            orphanRemoval = true)
+               cascade = CascadeType.ALL,
+               orphanRemoval = true)
     private List<CartItem> cartItems = new ArrayList<>();
 }
