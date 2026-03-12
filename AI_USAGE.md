@@ -23,8 +23,17 @@
 5. Ngày giờ: 12/03/2026 20:03
    Công cụ: Gemini 
    Promt: "Đọc Service của tôi ở phần Cart kiểm tra lỗi logic và sửa"
-   Sau đó tôi: Tìm và sửa lỗi.
+   Sau đó tôi: Copy code, tìm và sửa lỗi.
 
+6. Ngày giờ: 12/03/2026 22:15
+   Công cụ: Gemini
+   Promt: "Entity Cart và CartItem có quan hệ hai chiều. Khi trả về Cart trong API thì JSON bị lặp vô hạn, cách xử lí"
+   Sau đó tôi: Thêm @JsonIgnore vào CartItem để tránh lặp vô hạn.
+
+7. Ngày giờ: 12/03/2026 22:45
+   Công cụ: Gemini
+   Promt: "Đọc toàn bộ source đưa ra đánh giá nhận xét về tính logic, clean"
+   Sau đó tôi: Tham khảo và xem lại những chỗ chưa ổn.
 
 
 
