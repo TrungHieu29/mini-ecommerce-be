@@ -15,5 +15,12 @@
    Promt: "Tạo database"
    Sau đó tôi: Copy nội dung vào file data.sql.
 
+4. Ngày giờ: 12/03/2026 18:15
+   Công cụ: ChatGpt
+   Promt: "Viết Exception Handler cho dự án"
+   Sau đó tôi: Tạo và copy vào các file, sau đó sử dụng để bắt lỗi trong lớp Service.
+
+
+
 
 

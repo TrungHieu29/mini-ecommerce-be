@@ -1,9 +1,11 @@
 package com.example.mini_ecommerce_be.Service.Product;
 
-import org.springframework.stereotype.Service;
+import com.example.mini_ecommerce_be.Entity.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-@Service
 public interface ProductService {
 
-
+    Page<Product> getAllProducts(Pageable pageable);
+    Product getProductById(Long id);
 }
