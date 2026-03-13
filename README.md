@@ -56,7 +56,7 @@ Server sẽ hoạt động tại: `http://localhost:8080`
 
 | Method | Endpoint | Mô tả |
 | :--- | :--- | :--- |
-| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user |
+| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user(list items + tổng tiền) |
 | `POST` | `/api/cart/add` | Thêm sản phẩm vào giỏ |
 | `PUT` | `/api/cart/user/{uid}/products/{pid}` | Cập nhật số lượng (`?quantity=5`) |
 | `DELETE` | `/api/cart/user/{uid}/products/{pid}` | Xóa sản phẩm khỏi giỏ |
