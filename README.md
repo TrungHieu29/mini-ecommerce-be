@@ -1,3 +1,16 @@
+# Mini Ecommerce Backend
+
+Take-home assignment - Backend
+
+## Tech Stack
+- Java 21
+- Spring Boot 3
+- Spring Data JPA
+- H2 Database
+- Lombok
+- Spring Boot DevTools
+- Spring Web
+- Validation
 # 🛒 Mini E-commerce Backend
 
 ![Java](https://img.shields.io/badge/Java-21-orange?style=flat-square&logo=java)
@@ -29,11 +42,7 @@ Bạn có thể chạy ứng dụng ngay lập tức với Maven:
 
 ```bash
 # Clone dự án
-<<<<<<< HEAD
 git clone https://github.com/TrungHieu29/mini-ecommerce-be.git
-=======
-git clone https://github.com/your-repo/mini-ecommerce-be.git
->>>>>>> 9eb9756 (feat: add total price calculation for cart response)
 
 # Chạy ứng dụng
 mvn spring-boot:run
@@ -58,16 +67,12 @@ Server sẽ hoạt động tại: `http://localhost:8080`
 
 ### 🛒 Giỏ Hàng (Cart)
 
-| Method | Endpoint | Mô tả |
-| :--- | :--- | :--- |
-<<<<<<< HEAD
-| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user(list items + tổng tiền) |
-=======
-| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user |
->>>>>>> 9eb9756 (feat: add total price calculation for cart response)
-| `POST` | `/api/cart/add` | Thêm sản phẩm vào giỏ |
-| `PUT` | `/api/cart/user/{uid}/products/{pid}` | Cập nhật số lượng (`?quantity=5`) |
-| `DELETE` | `/api/cart/user/{uid}/products/{pid}` | Xóa sản phẩm khỏi giỏ |
+| Method | Endpoint | Mô tả                                          |
+| :--- | :--- |:-----------------------------------------------|
+| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user(list items và tổng tiền) |
+| `POST` | `/api/cart/add` | Thêm sản phẩm vào giỏ                          |
+| `PUT` | `/api/cart/user/{uid}/products/{pid}` | Cập nhật số lượng (`?quantity=5`)              |
+| `DELETE` | `/api/cart/user/{uid}/products/{pid}` | Xóa sản phẩm khỏi giỏ                          |
 
 #### 📝 Ví dụ JSON (Thêm vào giỏ)
 **URL:** `POST /api/cart/add`
