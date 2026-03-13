@@ -122,4 +122,18 @@ public class CartServiceImpl implements CartService {
 
         return cartRepository.save(cart);
     }
+
+    @Override
+    public double calculateTotal(Cart cart) {
+        double total = 0;
+
+        for (CartItem item : cart.getCartItems()) {
+            double price = item.getProduct().getPrice();
+            int quantity = item.getQuantity();
+
+            total += price * quantity;
+        }
+
+        return total;
+    }
 }

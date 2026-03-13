@@ -6,6 +6,9 @@ import com.example.mini_ecommerce_be.Service.Cart.CartService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/cart")
 public class CartController {
@@ -18,7 +21,15 @@ public class CartController {
 
     @GetMapping("/user/{userId}")
     public ResponseEntity<?> getCartByUserId(@PathVariable Long userId) {
-        return ResponseEntity.ok(cartService.getCartByUserId(userId));
+
+        var cart = cartService.getCartByUserId(userId);
+        double totalPrice = cartService.calculateTotal(cart);
+
+        Map<String, Object> response = new HashMap<>();
+        response.put("cart", cart);
+        response.put("totalPrice", totalPrice);
+
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/add")

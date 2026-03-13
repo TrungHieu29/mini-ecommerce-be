@@ -29,7 +29,11 @@ Bạn có thể chạy ứng dụng ngay lập tức với Maven:
 
 ```bash
 # Clone dự án
+<<<<<<< HEAD
 git clone https://github.com/TrungHieu29/mini-ecommerce-be.git
+=======
+git clone https://github.com/your-repo/mini-ecommerce-be.git
+>>>>>>> 9eb9756 (feat: add total price calculation for cart response)
 
 # Chạy ứng dụng
 mvn spring-boot:run
@@ -56,7 +60,11 @@ Server sẽ hoạt động tại: `http://localhost:8080`
 
 | Method | Endpoint | Mô tả |
 | :--- | :--- | :--- |
+<<<<<<< HEAD
 | `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user(list items + tổng tiền) |
+=======
+| `GET` | `/api/cart/user/{userId}` | Xem giỏ hàng của user |
+>>>>>>> 9eb9756 (feat: add total price calculation for cart response)
 | `POST` | `/api/cart/add` | Thêm sản phẩm vào giỏ |
 | `PUT` | `/api/cart/user/{uid}/products/{pid}` | Cập nhật số lượng (`?quantity=5`) |
 | `DELETE` | `/api/cart/user/{uid}/products/{pid}` | Xóa sản phẩm khỏi giỏ |

@@ -8,4 +8,5 @@ public interface CartService {
     Cart addProductToCart(Long userId, Long productId, Integer quantity);
     Cart removeProductFromCart(Long userId, Long productId);
     Cart updateProductQuantity(Long userId, Long productId, Integer quantity);
+    double calculateTotal(Cart cart);
 }
