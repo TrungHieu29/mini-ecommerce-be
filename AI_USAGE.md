@@ -35,7 +35,10 @@
    Promt: "Đọc toàn bộ source đưa ra đánh giá nhận xét về tính logic, clean"
    Sau đó tôi: Tham khảo và xem lại những chỗ chưa ổn.
 
-
+8. Ngày giờ: 13/03/2026 14:10
+   Công cụ: ChatGpt
+   Promt: "Tính tổng tiền từ dữ liệu trong DB nhưng không lưu vào DB. Tức là mỗi lần API trả giỏ hàng, backend sẽ tính lại tổng tiền dựa trên CartItems."
+   Sau đó tôi: Copy code và sửa lại.
 
 
 
